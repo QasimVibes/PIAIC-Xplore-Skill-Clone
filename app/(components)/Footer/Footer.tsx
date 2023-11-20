@@ -1,3 +1,4 @@
+import Link from 'next/link'
 interface FooterProps{
   text:  React.ReactNode;
 }
@@ -17,10 +18,10 @@ const Footer:React.FC<FooterProps> =({text})=> {
         </div>
         <p>
           Made with <i className="fas fa-heart"></i> by{" "}
-          <a href="index.html">Sagar Developer</a>
+          <Link href="/">Sagar Developer</Link>
         </p>
         <p>
-          Copyright © 2021 <a href="index.html">Xplore Skill</a>. All Rights
+          Copyright © 2021 <Link href="/">Xplore Skill</Link>. All Rights
           Reserved
         </p>
       </section>
