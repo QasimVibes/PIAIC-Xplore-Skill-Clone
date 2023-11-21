@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface MainBTNProps {
@@ -6,9 +7,9 @@ interface MainBTNProps {
 
 const MainBTN: React.FC<MainBTNProps> = (props) => {
   return (
-    <a href="#" className="hero_btn">
+    <Link href="/contact" className="hero_btn">
       {props.text}
-    </a>
+    </Link>
   );
 };
 
